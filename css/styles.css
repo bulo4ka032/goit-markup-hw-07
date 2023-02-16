@@ -895,6 +895,9 @@ display: flex;
     padding: 24px 156px 28px;
     border-bottom: 1px solid var(--light-color);
   }
+  .page-header-container {
+    margin-right: 156px;
+  }
   .page-address {
     display: flex;
 
@@ -912,8 +915,8 @@ display: flex;
     margin-bottom: 48px;
   }
   .hero-section {
-    padding: 188px 156px;
-   width: 1158px;
+    padding: 188px 0;
+   max-width: 1400px;
     background-color: var(--primary-color);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -931,7 +934,11 @@ display: flex;
   }
   .features {
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 24px;
+  }
+  .features-wrap {
+    flex-wrap: nowrap;
   }
   .feature {
     width: 264px;
@@ -975,6 +982,7 @@ display: flex;
       gap: 24px;
     }
     .teammate-cards-wraper {
+      
       margin: 0;
     }
     .customers-list {
@@ -1063,7 +1071,7 @@ display: flex;
 
 /* \\\\\\\\\\\\\\\\\\\ Portfolio ////////////////// */
 
-/* .portfolio-section {
+.portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -1181,7 +1189,7 @@ display: flex;
 .project-description:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
 
 /* == === === === == FOOTER == === == == == == */
 

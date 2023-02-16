@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    /> -->
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -60,27 +60,32 @@
         </address>
       </div>
       <div class="mobile-menu js-menu-container">
-        <button type="button"  class="mobile-menu__close-btn js-close-menu">
+        <button type="button" class="mobile-menu__close-btn js-close-menu">
           <svg width="8" height="8" class="mobile-menu__close-btn-icon">
             <use href="./images/icons.svg#close-modal"></use>
           </svg>
         </button>
         <ul class="mobile-menu-list list">
-          <li class="mobile-menu-link">Studio<a href="./index.html"></a>
+          <li class="mobile-menu-link">Studio<a href="./index.html"></a></li>
+          <li class="mobile-menu-link">
+            Portfolio<a href="./portfolio.html"></a>
           </li>
-          <li class="mobile-menu-link">Portfolio<a href="./portfolio.html"></a>
-          </li>
-          <li class="mobile-menu-link mobile-menu-link-contacts">Contacts<a href=""></a>
+          <li class="mobile-menu-link mobile-menu-link-contacts">
+            Contacts<a href=""></a>
           </li>
         </ul>
         <ul class="mobile-menu-contacts-list list">
           <li>
             <a class="mobile-menu-contact-phone link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a>
+              >+11 (000) 111-11-11</a
+            >
           </li>
           <li>
-            <a class="mobile-menu-contact-mail link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a>
+            <a
+              class="mobile-menu-contact-mail link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
         </ul>
         <ul class="mobile-menu-social-list list">
@@ -131,7 +136,8 @@
         <div class="container">
           <h2 class="features-title">Features</h2>
           <ul class="list features">
-            <div class="features-wrap">
+            <li>
+              <ul class="list features-wrap">
               <li class="feature">
                 <div class="feature-item">
                   <svg width="64" height="64" class="feature-icon">
@@ -152,13 +158,14 @@
                 </div>
                 <h3 class="feature-title">Punctuality</h3>
                 <p class="feature-description">
-                  Bring the key message to the brand's audience for the best price
-                  within the shortest possible time.
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
                 </p>
-              </li>
-            </div>
+              </li></ul>
+            </li>
 
-<div class="features-wrap">
+            <li>
+              <ul class="list features-wrap">
               <li class="feature">
                 <div class="feature-item">
                   <svg width="64" height="64" class="feature-icon">
@@ -179,11 +186,11 @@
                 </div>
                 <h3 class="feature-title">Technologies</h3>
                 <p class="feature-description">
-                  Design practice focused on digital experiences. We bring forth a
-                  deep passion for problem-solving.
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
                 </p>
-              </li>
-</di>
+              </li></ul>
+            </li>
           </ul>
         </div>
       </section>
@@ -227,7 +234,8 @@
         <div class="container">
           <h2 class="team-title sub-title">Our team</h2>
           <ul class="teammates list">
-       <div class="teammate-cards-wraper">
+            <li>
+              <ul class="teammate-cards-wraper list">
               <li class="teammate-card">
                 <img
                   srcset="./images/teamcard1@2x.jpg 2x"
@@ -313,12 +321,16 @@
                     </li>
                   </ul>
                 </div>
-              </li>
-       </div>
-       <div class="teammate-cards-wraper">
+              </li></ul>
+            </li>
+            <li>
+              <ul class="list teammate-cards-wraper">
               <li class="teammate-card">
                 <img
-                  srcset="./images/teamcard3.jpg 1x, ./images/teamcard3@2x.jpg 2x"
+                  srcset="
+                    ./images/teamcard3.jpg    1x,
+                    ./images/teamcard3@2x.jpg 2x
+                  "
                   src="./images/teamcard3.jpg"
                   alt="Third teammate"
                   width="264"
@@ -401,8 +413,8 @@
                     </li>
                   </ul>
                 </div>
-              </li>
-       </div>
+              </li></ul>
+            </li>
           </ul>
         </div>
       </section>

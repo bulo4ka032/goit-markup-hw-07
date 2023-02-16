@@ -809,9 +809,13 @@ display: flex;
     font-size: 56px;
     line-height: 1.07;
   }
+  .feature {
+    width: calc((100% - 72px) / 2);
+  }
   .features {
+    width: 100%;
     flex-wrap: wrap;
-  
+   flex-direction: row;
   }
   .features-wrap {
     flex-direction: row;
@@ -823,14 +827,16 @@ display: flex;
   .feature-description {
     width: 356px;
   }
-  .teammate-cards-wraper {
+  .teammates {
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
+    width: 552px;
     margin-left: auto;
     margin-right: auto;
   }
   .teammate-card {
-    margin: 0;
+    max-width: calc((100% - 24px) / 2);
   }
   .customers-section{
  
@@ -877,7 +883,7 @@ display: flex;
   .container {
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
+    width: 1158px;
   }
   .section {
     padding-top: 120px;
@@ -891,13 +897,11 @@ display: flex;
     bottom: -10px;
   }
   .header {
-     margin: 0 auto;
-    padding: 24px 156px 28px;
+    max-width: 100%;
+    padding: 24px 24px 28px;
     border-bottom: 1px solid var(--light-color);
   }
-  .page-header-container {
-    margin-right: 156px;
-  }
+ 
   .page-address {
     display: flex;
 
@@ -932,9 +936,18 @@ display: flex;
     margin-bottom: 8px;
     margin-top: 8px;
   }
+  .feature {
+    width: calc((100% - 72px) / 4);
+  }
+  .feature-section {
+        margin-left: auto;
+    margin-right: auto;
+  }
   .features {
+
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 100%;
     gap: 24px;
   }
   .features-wrap {
@@ -973,18 +986,15 @@ display: flex;
       gap: 24px;
     }
     .team-section {
-      width: 1200px;
+     
       margin-left: auto;
       margin-right: auto;
     }
     .teammates {
-      flex-direction: row;
-      gap: 24px;
+      width: 100%;
+     
     }
-    .teammate-cards-wraper {
-      
-      margin: 0;
-    }
+
     .customers-list {
       width: auto;
       flex-wrap: nowrap;
@@ -1004,6 +1014,10 @@ display: flex;
      gap: 0;
       flex-wrap: nowrap;
       
+    }
+    .footer-form {
+      justify-content: flex-start;
+      flex-wrap: nowrap;
     }
     .footer-social {
      margin-left: 120px;

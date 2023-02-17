@@ -239,6 +239,10 @@ img {
   width: 360px;
 }
 
+.modal-form-field {
+  line-height: 0;
+}
+
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -994,13 +998,13 @@ display: flex;
   .modal-form-check-desc {
     margin-top: 16px;
   }
-  .modal-form-field {
+  /* .modal-form-field {
     height: 60px;
     margin-bottom: 8px;
-  }
+  } */
   .modal {
     width: 392px;
-    height: 586px;
+    min-height: 586px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1167,7 +1171,7 @@ display: flex;
     align-items: baseline;
   }
   .modal {
-    height: 586px;
+    min-height: 586px;
     width: 408px;
    
     padding-left: 23px;
